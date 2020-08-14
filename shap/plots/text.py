@@ -131,5 +131,6 @@ def text_plot(shap_values, tokens, partition_tree=None, num_starting_labels=0, g
              + "</div>" \
              + "</div> "
 
-    from IPython.core.display import display, HTML
-    return display(HTML(out))
+    from IPython.core.display import HTML
+    # (joao) I modified this so I can display the HTML with streamlit
+    return HTML(out)
